@@ -11,11 +11,11 @@ public class Main {
         ListNode t = new ListNode(14, null);
         second.next = m;
         m.next = t;
-        ReverseLinkedList rev = new ReverseLinkedList();
-        ListNode newHead = rev.reverseList(head);
-        while(newHead != null){
-            System.out.println(newHead.val);
-            newHead = newHead.next;
+        MergeLinkedList merge = new MergeLinkedList();
+        ListNode merged = merge.mergeLinkedList(head, second);
+        while(merged != null){
+            System.out.println(merged.val);
+            merged = merged.next;
         }
 
     }
