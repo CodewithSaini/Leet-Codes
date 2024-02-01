@@ -1,4 +1,4 @@
-
+import java.util.*;
 public class Main {
     public static void main(String[] args) {
         ListNode head = new ListNode(3);
@@ -11,11 +11,17 @@ public class Main {
         ListNode t = new ListNode(14, null);
         second.next = m;
         m.next = t;
-        MergeLinkedList merge = new MergeLinkedList();
-        ListNode merged = merge.mergeLinkedList(head, second);
-        while(merged != null){
-            System.out.println(merged.val);
-            merged = merged.next;
+        ListNode third = new ListNode(1);
+        ListNode m3 = new ListNode(5);
+        ListNode t3 = new ListNode(9, null);
+
+        ListNode[] lists = {head, second, third};
+        SortKList sortK = new SortKList();
+        ListNode merged = sortK.mergeKLists(lists);
+        ListNode curr = merged;
+        while (curr != null){
+            System.out.println(curr.val);
+            curr = curr.next;
         }
 
     }
