@@ -8,8 +8,8 @@ public class MergeSortLinkedList {
 
         middle.next = null;
 
-        ListNode left = list;
-        ListNode right = nextToMiddle;
+        ListNode left = sortLinkedList(list);
+        ListNode right = sortLinkedList(nextToMiddle);
 
         ListNode sortedList = mergeList(left, right);
         return sortedList;
@@ -38,11 +38,11 @@ public class MergeSortLinkedList {
         }
         if (left.val <= right.val){
             result = left;
-            left = mergeList(left.next, right);
+            result.next = mergeList(left.next, right);
         }
         else{
             result = right;
-            right = mergeList(left, right.next);
+            result.next = mergeList(left, right.next);
         }
         return result;
 
