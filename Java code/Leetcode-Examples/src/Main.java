@@ -1,16 +1,19 @@
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
-        ListNode head = new ListNode(3);
-        ListNode middle = new ListNode(12);
-        ListNode tail = new ListNode(10, null);
+        ListNode head = new ListNode(1);
+        ListNode middle = new ListNode(2);
+        ListNode tail = new ListNode(3);
+        ListNode three = new ListNode(4);
+        ListNode four = new ListNode(5, null);
         head.next = middle;
         middle.next = tail;
-        ListNode second = new ListNode(3);
-        ListNode m = new ListNode(8);
+        tail.next = three;
+        three.next = four;
+        ListNode second = new ListNode(3, null);
+        ListNode m = new ListNode(8, null);
         ListNode t = new ListNode(14, null);
-        second.next = m;
-        m.next = t;
+
         ListNode third = new ListNode(1);
         ListNode m3 = new ListNode(5);
         ListNode t3 = new ListNode(9, null);
@@ -22,10 +25,17 @@ public class Main {
         while (curr != null){
             System.out.println(curr.val);
             curr = curr.next;
-        }*/
+        }
         MergeSortLinkedList sort = new MergeSortLinkedList();
         ListNode sorted = sort.sortLinkedList(head);
         ListNode curr = sorted;
+        while (curr != null) {
+            System.out.println(curr.val);
+            curr = curr.next;
+        }*/
+        RemoveNthNodeFromEnd remove = new RemoveNthNodeFromEnd();
+        ListNode newHead = remove.removeNode(head, 2);
+        ListNode curr = newHead;
         while (curr != null) {
             System.out.println(curr.val);
             curr = curr.next;
