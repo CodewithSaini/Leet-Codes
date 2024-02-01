@@ -33,14 +33,6 @@ public class Main {
             System.out.println(curr.val);
             curr = curr.next;
         }*/
-        RemoveNthNodeFromEnd remove = new RemoveNthNodeFromEnd();
-        ListNode newHead = remove.removeNode(head, 2);
-        ListNode curr = newHead;
-        while (curr != null) {
-            System.out.println(curr.val);
-            curr = curr.next;
-        }
-
 
     }
 }
