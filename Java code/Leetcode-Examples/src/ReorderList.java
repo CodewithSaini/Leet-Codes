@@ -1,14 +1,20 @@
 public class ReorderList {
     public void reorderList(ListNode head) {
         ListNode start = head;
-        ListNode middle = getMiddle(head);
+        ListNode middle = getMiddle(start);
         ListNode second = middle.next;
         middle.next = null;
         ListNode secondReverse = reverse(second);
         while (secondReverse != null){
-            System.out.println(secondReverse.val);
-            secondReverse = secondReverse.next;
+            ListNode temp = start.next;
+            start.next = secondReverse;
+            start = temp;
+            ListNode temp2 = secondReverse.next;
+            secondReverse.next = start;
+            secondReverse = temp2;
+
         }
+        head = start;
     }
 
     private ListNode getMiddle(ListNode head){
@@ -23,11 +29,13 @@ public class ReorderList {
     private ListNode reverse(ListNode head){
         ListNode curr = head;
         ListNode prev = null;
+        ListNode next;
         while (curr != null){
+            next = curr.next;
             curr.next = prev;
             prev = curr;
-            curr = curr.next;
+            curr = next;
         }
-
+        return prev;
     }
 }
