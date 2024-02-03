@@ -33,9 +33,9 @@ public class Main {
             System.out.println(curr.val);
             curr = curr.next;
         }*/
-        ValidPalindrome check = new ValidPalindrome();
-        boolean y = check.isPalindrome("racecar");
-        System.out.println(y);
+        ValidAnagram check = new ValidAnagram();
+        boolean ch = check.isAnagram("aacc", "ccac");
+        System.out.println(ch);
     }
 }
 
