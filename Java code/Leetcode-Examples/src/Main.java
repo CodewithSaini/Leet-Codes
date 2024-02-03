@@ -1,6 +1,7 @@
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
+        int[] nums = {10,9,2,5,3,7,101,18};
         ListNode head = new ListNode(1);
         ListNode middle = new ListNode(2);
         ListNode tail = new ListNode(3);
@@ -33,9 +34,8 @@ public class Main {
             System.out.println(curr.val);
             curr = curr.next;
         }*/
-        ValidAnagram check = new ValidAnagram();
-        boolean ch = check.isAnagram("aacc", "ccac");
-        System.out.println(ch);
+        LIS seq = new LIS();
+        int num = seq.lengthOfLIS(nums);
     }
 }
 
