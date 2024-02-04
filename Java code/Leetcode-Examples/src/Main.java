@@ -34,9 +34,9 @@ public class Main {
             System.out.println(curr.val);
             curr = curr.next;
         }*/
-        int[] r = { 2, 7, 9, 3, 1};
-        HouseRobber rob = new HouseRobber();
-        int re = rob.rob(r);
+        List<String> word = List.of("leet", "code");
+        WordBreak check = new WordBreak();
+        boolean re = check.wordBreak("leetcode", word);
         System.out.println(re);
     }
 }
