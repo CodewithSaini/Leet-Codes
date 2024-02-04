@@ -34,9 +34,10 @@ public class Main {
             System.out.println(curr.val);
             curr = curr.next;
         }*/
-        LCS seq = new LCS();
-        int num = seq.longestCommonSubsequence("abcde", "ace");
-        System.out.println(num);
+        int[] r = { 2, 7, 9, 3, 1};
+        HouseRobber rob = new HouseRobber();
+        int re = rob.rob(r);
+        System.out.println(re);
     }
 }
 
