@@ -34,8 +34,9 @@ public class Main {
             System.out.println(curr.val);
             curr = curr.next;
         }*/
-        LIS seq = new LIS();
-        int num = seq.lengthOfLIS(nums);
+        LCS seq = new LCS();
+        int num = seq.longestCommonSubsequence("abcde", "ace");
+        System.out.println(num);
     }
 }
 
