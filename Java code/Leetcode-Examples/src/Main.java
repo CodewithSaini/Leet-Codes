@@ -34,10 +34,9 @@ public class Main {
             System.out.println(curr.val);
             curr = curr.next;
         }*/
-        List<String> word = List.of("leet", "code");
-        WordBreak check = new WordBreak();
-        boolean re = check.wordBreak("leetcode", word);
-        System.out.println(re);
+        LongestSubstring sub = new LongestSubstring();
+        int n = sub.lengthOfLongestSubstring("pwwkew");
+        System.out.println(n);
     }
 }
 
