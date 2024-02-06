@@ -1,3 +1,5 @@
+from bubble_sort import bubble_sort
+
 import time
 def merge_sort(arr):
     n = len(arr)
@@ -30,11 +32,17 @@ def merge_sort(arr):
 
 
 
-arr = [2, 4, 3, 6, 9, 12, 1, 5, 19, 112, 89, 61, 55, 76, 32, 29, 21, 33, 40, 49, 100, 99, 93]
+arr = [2, 4, 3, 6, 76, 32, 29, 21, 33, 40, 49, 100, 99, 93, 9, 12, 1, 5, 19, 112, 89, 61, 55, 7]
 
 start = time.time()
 merge_sort(arr)
 end = time.time()
 
 print(arr)
-print("Time: ", end - start)
+print("Time: ", f"{(end - start):>40.8f}")
+
+start = time.time()
+bubble_sort(arr)
+end = time.time()
+
+print("Time: ", f"{(end - start):>40.8f}")

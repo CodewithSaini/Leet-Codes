@@ -11,5 +11,5 @@ def bubble_sort(arr):
 
 list = [3, 9, 2, 7, 99, 68, 45, 32, 11]
 
-bubble_sort(list)
-print(list)
+#bubble_sort(list)
+#print(list)

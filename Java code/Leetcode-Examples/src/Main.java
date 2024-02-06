@@ -34,9 +34,10 @@ public class Main {
             System.out.println(curr.val);
             curr = curr.next;
         }*/
-        LongestSubstring sub = new LongestSubstring();
-        int n = sub.lengthOfLongestSubstring("pwwkew");
-        System.out.println(n);
+        int[] num = {2, 3, 1, 1, 4};
+        CanJump jump = new CanJump();
+        boolean re = jump.canJump(num);
+        System.out.println(re);
     }
 }
 
