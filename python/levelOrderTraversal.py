@@ -16,6 +16,8 @@ root = TreeNode(3, two, three)
 
 class Solution:
     def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+        if root == None:
+            return []
         queue = []
         queue.append(root)
         result = []
