@@ -34,10 +34,9 @@ public class Main {
             System.out.println(curr.val);
             curr = curr.next;
         }*/
-        int[] num = {2, 3, 1, 1, 4};
-        CanJump jump = new CanJump();
-        boolean re = jump.canJump(num);
-        System.out.println(re);
+        DecodeWays ways = new DecodeWays();
+        int num = ways.numDecodings("226");
+        System.out.println(num);
     }
 }
 
