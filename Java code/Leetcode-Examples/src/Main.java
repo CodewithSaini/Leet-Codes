@@ -34,9 +34,13 @@ public class Main {
             System.out.println(curr.val);
             curr = curr.next;
         }*/
-        DecodeWays ways = new DecodeWays();
-        int num = ways.numDecodings("226");
-        System.out.println(num);
+        int[][] arr = {{1,2}, {3, 5},{6,7 }, {8, 10}, {12, 16}};
+        int[] temp = {4, 8};
+        InsertInterval merge = new InsertInterval();
+        int[][] re =  merge.insert(arr, temp);
+        for (int[] i: re){
+            System.out.println(i[0]);
+        }
     }
 }
 
