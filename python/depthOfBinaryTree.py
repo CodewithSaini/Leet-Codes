@@ -29,6 +29,16 @@ class Solution:
             maxDepth = maxDepth +1
         return maxDepth
 
+
+def pre_order_traversal(root):
+    if root == None:
+        return None
+    print(root.val, end="->")
+    pre_order_traversal(root.left)
+    pre_order_traversal(root.right)
+
+
+
 one = TreeNode(1, None, None)
 two = TreeNode(2, None, None)
 four = TreeNode(4, None, None)
@@ -41,3 +51,5 @@ sol = Solution()
 depth: int = sol.maxDepth(root)
 
 print(f"Tree Depth: {depth}")
+
+pre_order_traversal(root)
