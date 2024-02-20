@@ -1,7 +1,7 @@
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
-        int[] nums = {10,9,2,5,3,7,101,18};
+        int[] nums = {10,9,2,5,3,7,101,18, 9};
         ListNode head = new ListNode(1);
         ListNode middle = new ListNode(2);
         ListNode tail = new ListNode(3);
@@ -38,8 +38,11 @@ public class Main {
         int[] temp = {4, 8};
         InsertInterval merge = new InsertInterval();
         int[][] re =  merge.insert(arr, temp);
-        for (int[] i: re){
-            System.out.println(i[0]);
+
+        QuickSort q = new QuickSort();
+        q.quicksort(nums);
+        for (int i: nums){
+            System.out.println(i);
         }
     }
 }
