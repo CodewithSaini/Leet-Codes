@@ -39,11 +39,8 @@ public class Main {
         InsertInterval merge = new InsertInterval();
         int[][] re =  merge.insert(arr, temp);
 
-        QuickSort q = new QuickSort();
-        q.quicksort(nums);
-        for (int i: nums){
-            System.out.println(i);
-        }
+        LongestRepeatingCharReplace sol = new LongestRepeatingCharReplace();
+        System.out.println(sol.characterReplacement("AABABBA", 1));
     }
 }
 
