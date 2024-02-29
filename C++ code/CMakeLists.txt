@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.23)
-project(C___code)
+project(DSA)
 
 set(CMAKE_CXX_STANDARD 20)
 
