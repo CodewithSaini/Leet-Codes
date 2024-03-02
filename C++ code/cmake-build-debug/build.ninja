@@ -52,6 +52,12 @@ build CMakeFiles/C___code.dir/main.cpp.o: CXX_COMPILER__C___code_Debug /Users/vi
   OBJECT_DIR = CMakeFiles/C___code.dir
   OBJECT_FILE_DIR = CMakeFiles/C___code.dir
 
+build CMakeFiles/C___code.dir/PalindromicSequence.cpp.o: CXX_COMPILER__C___code_Debug /Users/vikassaini/Desktop/Side-Projects/LeetCode$ Exercises/C++$ code/PalindromicSequence.cpp || cmake_object_order_depends_target_C___code
+  DEP_FILE = CMakeFiles/C___code.dir/PalindromicSequence.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -std=gnu++20
+  OBJECT_DIR = CMakeFiles/C___code.dir
+  OBJECT_FILE_DIR = CMakeFiles/C___code.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target C___code
@@ -60,7 +66,7 @@ build CMakeFiles/C___code.dir/main.cpp.o: CXX_COMPILER__C___code_Debug /Users/vi
 #############################################
 # Link the executable C___code
 
-build C___code: CXX_EXECUTABLE_LINKER__C___code_Debug CMakeFiles/C___code.dir/main.cpp.o
+build C___code: CXX_EXECUTABLE_LINKER__C___code_Debug CMakeFiles/C___code.dir/main.cpp.o CMakeFiles/C___code.dir/PalindromicSequence.cpp.o
   FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk
   OBJECT_DIR = CMakeFiles/C___code.dir
   POST_BUILD = :

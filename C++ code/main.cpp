@@ -1,12 +1,12 @@
 #include <iostream>
+#include "PalindromicSequence.h"
 
 using namespace std;
 
 int main() {
-    int x = 7;
-    int *y = &x;
-    cout << "Hello, World!" << endl;
-    cout << x << endl;
-    cout << *y;
+    PalindromicSequence pal = PalindromicSequence();
+    string re = pal.longestPalindrome("ababd");
+    cout << re << endl;
+
     return 0;
 }
