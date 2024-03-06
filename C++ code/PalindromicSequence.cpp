@@ -11,10 +11,10 @@ string PalindromicSequence::longestPalindrome(std::string s) {
     if (s.length() <= 1){
         return s;
     }
-    for (int i=1; i<s.length(); i++){
+    for (int i=0; i<s.length(); i++){
         int low = i;
         int high = i;
-        while (s[low] == s[high]){
+        while (s.at(low) == s.at(high)){
             low--;
             high++;
             if (low < 0 || high == s.length()){
@@ -26,9 +26,9 @@ string PalindromicSequence::longestPalindrome(std::string s) {
             result = palindrome;
         }
 
-        low = i-1;
-        high = i;
-        while (s[low] == s[high]){
+        low = i;
+        high = i+1;
+        while (s.at(low) == s.at(high)){
             low--;
             high++;
             if (low < 0 || high == s.length()){
