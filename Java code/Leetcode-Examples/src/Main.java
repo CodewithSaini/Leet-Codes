@@ -42,7 +42,7 @@ public class Main {
         //LongestRepeatingCharReplace sol = new LongestRepeatingCharReplace();
         //System.out.println(sol.characterReplacement("AABABBA", 1));
 
-        EarseOverlappingIntervals sol2 = new EarseOverlappingIntervals();
+        EraseOverlappingIntervals sol2 = new EraseOverlappingIntervals();
         int re = sol2.removeOverlappingIntervals(arr);
         System.out.println(re);
     }
