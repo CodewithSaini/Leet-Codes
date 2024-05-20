@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class EarseOverlappingIntervals {
+public class EraseOverlappingIntervals {
     public int removeOverlappingIntervals(int[][] intervals) {
         int result = 0;
         int prevEnd = intervals[0][1];
