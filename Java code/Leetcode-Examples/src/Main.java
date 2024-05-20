@@ -34,13 +34,17 @@ public class Main {
             System.out.println(curr.val);
             curr = curr.next;
         }*/
-        int[][] arr = {{1,2}, {3, 5},{6,7 }, {8, 10}, {12, 16}};
-        int[] temp = {4, 8};
-        InsertInterval merge = new InsertInterval();
-        int[][] re =  merge.insert(arr, temp);
+        int[][] arr = {{1,3}, {1,3}, {3, 4}, {1, 3}};
+        //int[] temp = {4, 8};
+        //InsertInterval merge = new InsertInterval();
+        //int[][] re =  merge.insert(arr, temp);
 
-        LongestRepeatingCharReplace sol = new LongestRepeatingCharReplace();
-        System.out.println(sol.characterReplacement("AABABBA", 1));
+        //LongestRepeatingCharReplace sol = new LongestRepeatingCharReplace();
+        //System.out.println(sol.characterReplacement("AABABBA", 1));
+
+        EarseOverlappingIntervals sol2 = new EarseOverlappingIntervals();
+        int re = sol2.removeOverlappingIntervals(arr);
+        System.out.println(re);
     }
 }
 

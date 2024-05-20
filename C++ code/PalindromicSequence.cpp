@@ -8,35 +8,35 @@
 
 string PalindromicSequence::longestPalindrome(std::string s) {
     string result = "";
-    if (s.length() <= 1){
+    if (s.size() <= 1){
         return s;
     }
-    for (int i=0; i<s.length(); i++){
+    for (int i=1; i<s.size(); i++){
         int low = i;
         int high = i;
-        while (s.at(low) == s.at(high)){
+        while (s[low] == s[high]){
             low--;
             high++;
-            if (low < 0 || high == s.length()){
+            if (low < 0 || high == s.size()){
                 break;
             }
         }
         string palindrome = s.substr(low+1, high);
-        if (palindrome.length() > result.length()){
+        if (palindrome.size() > result.size()){
             result = palindrome;
         }
 
-        low = i;
-        high = i+1;
-        while (s.at(low) == s.at(high)){
+        low = i-1;
+        high = i;
+        while (s[low] == s[high]){
             low--;
             high++;
-            if (low < 0 || high == s.length()){
+            if (low < 0 || high == s.size()){
                 break;
             }
         }
         palindrome = s.substr(low+1, high);
-        if (palindrome.length() > result.length()){
+        if (palindrome.size() > result.size()){
             result = palindrome;
         }
     }
